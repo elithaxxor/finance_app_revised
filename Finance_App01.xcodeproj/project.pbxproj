@@ -7,32 +7,210 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6504D2062845704D009C3193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D2052845704D009C3193 /* AppDelegate.swift */; };
-		6504D2082845704D009C3193 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D2072845704D009C3193 /* SceneDelegate.swift */; };
-		6504D20A2845704D009C3193 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D2092845704D009C3193 /* ViewController.swift */; };
-		6504D20D2845704D009C3193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6504D20B2845704D009C3193 /* Main.storyboard */; };
-		6504D2102845704D009C3193 /* Finance_App01.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6504D20E2845704D009C3193 /* Finance_App01.xcdatamodeld */; };
-		6504D2122845704D009C3193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6504D2112845704D009C3193 /* Assets.xcassets */; };
-		6504D2152845704D009C3193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6504D2132845704D009C3193 /* LaunchScreen.storyboard */; };
+		652FE12F284577BD00BC72AD /* Swifter.docc in Sources */ = {isa = PBXBuildFile; fileRef = 652FE12E284577BD00BC72AD /* Swifter.docc */; };
+		652FE13D284577BE00BC72AD /* Swifter.h in Headers */ = {isa = PBXBuildFile; fileRef = 652FE12D284577BD00BC72AD /* Swifter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65CD6704284596C000CC0B5A /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 6504D21F28457071009C3193 /* Assets.xcassets */; };
+		65CD6705284596C000CC0B5A /* Preview Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 6504D22228457071009C3193 /* Preview Assets.xcassets */; };
+		65CD6706284596C000CC0B5A /* HackerNewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D22328457071009C3193 /* HackerNewsApp.swift */; };
+		65CD6707284596C000CC0B5A /* MBProgAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D22728457071009C3193 /* MBProgAnimate.swift */; };
+		65CD6709284596C000CC0B5A /* TwitterClassifer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6504D23528457071009C3193 /* TwitterClassifer.mlmodel */; };
+		65CD670D284596C100CC0B5A /* createTwitterMLmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D23928457071009C3193 /* createTwitterMLmodel.swift */; };
+		65CD670E284596C100CC0B5A /* TableViewControllerLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D23128457071009C3193 /* TableViewControllerLogger.swift */; };
+		65CD670F284596C100CC0B5A /* ViewControllerLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D23228457071009C3193 /* ViewControllerLogger.swift */; };
+		65CD6710284596C100CC0B5A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D23328457071009C3193 /* APIService.swift */; };
+		65CD6711284596C100CC0B5A /* APIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D23A28457071009C3193 /* APIWorker.swift */; };
+		65CD6712284596C100CC0B5A /* DCALogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D23B28457071009C3193 /* DCALogic.swift */; };
+		65CD6713284596C100CC0B5A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D23C28457071009C3193 /* Extensions.swift */; };
+		65CD6714284596C100CC0B5A /* newsAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D23D28457071009C3193 /* newsAPIWorker.swift */; };
+		65CD6715284596C100CC0B5A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D22928457071009C3193 /* Constants.swift */; };
+		65CD6716284596C100CC0B5A /* calcLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D22A28457071009C3193 /* calcLogic.swift */; };
+		65CD6717284596C100CC0B5A /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D22B28457071009C3193 /* SearchResults.swift */; };
+		65CD6718284596C100CC0B5A /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D22D28457071009C3193 /* PostData.swift */; };
+		65CD6719284596C100CC0B5A /* TimeByMonthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D22E28457071009C3193 /* TimeByMonthModel.swift */; };
+		65CD671A284596C100CC0B5A /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D22F28457071009C3193 /* Asset.swift */; };
+		65CD671B284596C100CC0B5A /* DateSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D23F28457071009C3193 /* DateSelectionTableViewController.swift */; };
+		65CD671C284596C100CC0B5A /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D24028457071009C3193 /* SearchTableViewController.swift */; };
+		65CD671D284596C100CC0B5A /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D24128457071009C3193 /* NewsTableViewController.swift */; };
+		65CD671E284596C100CC0B5A /* PDFScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D24328457071009C3193 /* PDFScannerApp.swift */; };
+		65CD671F284596C100CC0B5A /* PDFScannerAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D24428457071009C3193 /* PDFScannerAppDelegate.swift */; };
+		65CD6720284596C100CC0B5A /* CTScanTextApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D24528457071009C3193 /* CTScanTextApp.swift */; };
+		65CD6721284596C100CC0B5A /* CTScanTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D24628457071009C3193 /* CTScanTextViewController.swift */; };
+		65CD6722284596C100CC0B5A /* PDFScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D24728457071009C3193 /* PDFScannerViewController.swift */; };
+		65CD6723284596C100CC0B5A /* CalculatorIII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D24828457071009C3193 /* CalculatorIII.swift */; };
+		65CD6724284596C100CC0B5A /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D24A28457071009C3193 /* SearchTableViewCell.swift */; };
+		65CD6725284596C100CC0B5A /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D24B28457071009C3193 /* PageViewController.swift */; };
+		65CD6726284596C100CC0B5A /* CalculatorViewTableControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D24C28457071009C3193 /* CalculatorViewTableControllerViewController.swift */; };
+		65CD6727284596C100CC0B5A /* TwitterPredictViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D24D28457071009C3193 /* TwitterPredictViewController.swift */; };
+		65CD6728284596C100CC0B5A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D25028457071009C3193 /* WebView.swift */; };
+		65CD6729284596C100CC0B5A /* SearchPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D25328457071009C3193 /* SearchPlaceholderView.swift */; };
+		65CD672A284596C100CC0B5A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D25528457071009C3193 /* DetailView.swift */; };
+		65CD672B284596C100CC0B5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D25628457071009C3193 /* ContentView.swift */; };
+		65CD672C284596C100CC0B5A /* HomeCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D25828457071009C3193 /* HomeCardViewController.swift */; };
+		65CD672D284596C100CC0B5A /* Financial_Calc_II-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 6504D25928457071009C3193 /* Financial_Calc_II-Bridging-Header.h */; };
+		65CD672E284596C100CC0B5A /* LaunchScreen.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 6504D25A28457071009C3193 /* LaunchScreen.storyboard */; };
+		65CD672F284596C100CC0B5A /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 6504D25C28457071009C3193 /* Main.storyboard */; };
+		65CD6730284596C100CC0B5A /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 6504D26028457071009C3193 /* Assets.xcassets */; };
+		65CD6731284596C100CC0B5A /* power.textClipping in Sources */ = {isa = PBXBuildFile; fileRef = 6504D26228457071009C3193 /* power.textClipping */; };
+		65CD6732284596C100CC0B5A /* 􀆕.textClipping in Sources */ = {isa = PBXBuildFile; fileRef = 6504D26328457071009C3193 /* 􀆕.textClipping */; };
+		65CD6733284596C100CC0B5A /* option@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 6504D26428457071009C3193 /* option@2x.png */; };
+		65CD6734284596C100CC0B5A /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D26728457071009C3193 /* InfoView.swift */; };
+		65CD6735284596C100CC0B5A /* businessCardIIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D26828457071009C3193 /* businessCardIIApp.swift */; };
+		65CD6736284596C100CC0B5A /* Preview Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 6504D26A28457071009C3193 /* Preview Assets.xcassets */; };
+		65CD6739284596C100CC0B5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D26E28457071009C3193 /* SceneDelegate.swift */; };
+		65CD673A284596C100CC0B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D25128457071009C3193 /* AppDelegate.swift */; };
+		65CD673B284596C100CC0B5A /* Finance_App01.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6504D20E2845704D009C3193 /* Finance_App01.xcdatamodeld */; };
+		65CD673E2845979F00CC0B5A /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 65CD673D2845979F00CC0B5A /* MBProgressHUD */; };
+		65CD673F284597DC00CC0B5A /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652FE11B2845777E00BC72AD /* SwifteriOS.framework */; };
+		65CD6740284597DC00CC0B5A /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 652FE11B2845777E00BC72AD /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65CD6748284597EF00CC0B5A /* Pods_Finance_App01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65CD6747284597EF00CC0B5A /* Pods_Finance_App01.framework */; };
+		65CD674B284597FE00CC0B5A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 65CD674A284597FE00CC0B5A /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		652FE11A2845777E00BC72AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 652FE1112845777E00BC72AD /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		652FE11C2845777E00BC72AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 652FE1112845777E00BC72AD /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		652FE11E2845777E00BC72AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 652FE1112845777E00BC72AD /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		652FE1202845777E00BC72AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 652FE1112845777E00BC72AD /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		652FE1222845777E00BC72AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 652FE1112845777E00BC72AD /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
+			remoteInfo = SwifterTests;
+		};
+		652FE1242845777E00BC72AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 652FE1112845777E00BC72AD /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65361BB4284560DD00D554DA;
+			remoteInfo = Finance_App00;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		65CD6741284597DD00CC0B5A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				65CD6740284597DC00CC0B5A /* SwifteriOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		6504D2022845704D009C3193 /* Finance_App01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finance_App01.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6504D2052845704D009C3193 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6504D2072845704D009C3193 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6504D2092845704D009C3193 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6504D20C2845704D009C3193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6504D20F2845704D009C3193 /* Finance_App01.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Finance_App01.xcdatamodel; sourceTree = "<group>"; };
-		6504D2112845704D009C3193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6504D2142845704D009C3193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6504D2162845704D009C3193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6504D21F28457071009C3193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6504D22228457071009C3193 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6504D22328457071009C3193 /* HackerNewsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HackerNewsApp.swift; sourceTree = "<group>"; };
+		6504D22728457071009C3193 /* MBProgAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgAnimate.swift; sourceTree = "<group>"; };
+		6504D22928457071009C3193 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6504D22A28457071009C3193 /* calcLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calcLogic.swift; sourceTree = "<group>"; };
+		6504D22B28457071009C3193 /* SearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		6504D22D28457071009C3193 /* PostData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		6504D22E28457071009C3193 /* TimeByMonthModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeByMonthModel.swift; sourceTree = "<group>"; };
+		6504D22F28457071009C3193 /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		6504D23128457071009C3193 /* TableViewControllerLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerLogger.swift; sourceTree = "<group>"; };
+		6504D23228457071009C3193 /* ViewControllerLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerLogger.swift; sourceTree = "<group>"; };
+		6504D23328457071009C3193 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		6504D23528457071009C3193 /* TwitterClassifer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TwitterClassifer.mlmodel; sourceTree = "<group>"; };
+		6504D23628457071009C3193 /* twitter-sanders-apple3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "twitter-sanders-apple3.csv"; sourceTree = "<group>"; };
+		6504D23728457071009C3193 /* twitter-sanders-apple3.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "twitter-sanders-apple3.zip"; sourceTree = "<group>"; };
+		6504D23828457071009C3193 /* twitterClassifier.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = twitterClassifier.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		6504D23928457071009C3193 /* createTwitterMLmodel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createTwitterMLmodel.swift; sourceTree = "<group>"; };
+		6504D23A28457071009C3193 /* APIWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIWorker.swift; sourceTree = "<group>"; };
+		6504D23B28457071009C3193 /* DCALogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCALogic.swift; sourceTree = "<group>"; };
+		6504D23C28457071009C3193 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6504D23D28457071009C3193 /* newsAPIWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newsAPIWorker.swift; sourceTree = "<group>"; };
+		6504D23F28457071009C3193 /* DateSelectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSelectionTableViewController.swift; sourceTree = "<group>"; };
+		6504D24028457071009C3193 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		6504D24128457071009C3193 /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		6504D24328457071009C3193 /* PDFScannerApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFScannerApp.swift; sourceTree = "<group>"; };
+		6504D24428457071009C3193 /* PDFScannerAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFScannerAppDelegate.swift; sourceTree = "<group>"; };
+		6504D24528457071009C3193 /* CTScanTextApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTScanTextApp.swift; sourceTree = "<group>"; };
+		6504D24628457071009C3193 /* CTScanTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTScanTextViewController.swift; sourceTree = "<group>"; };
+		6504D24728457071009C3193 /* PDFScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFScannerViewController.swift; sourceTree = "<group>"; };
+		6504D24828457071009C3193 /* CalculatorIII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorIII.swift; sourceTree = "<group>"; };
+		6504D24A28457071009C3193 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		6504D24B28457071009C3193 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		6504D24C28457071009C3193 /* CalculatorViewTableControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewTableControllerViewController.swift; sourceTree = "<group>"; };
+		6504D24D28457071009C3193 /* TwitterPredictViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterPredictViewController.swift; sourceTree = "<group>"; };
+		6504D25028457071009C3193 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		6504D25128457071009C3193 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6504D25328457071009C3193 /* SearchPlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPlaceholderView.swift; sourceTree = "<group>"; };
+		6504D25528457071009C3193 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		6504D25628457071009C3193 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6504D25828457071009C3193 /* HomeCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCardViewController.swift; sourceTree = "<group>"; };
+		6504D25928457071009C3193 /* Financial_Calc_II-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Financial_Calc_II-Bridging-Header.h"; sourceTree = "<group>"; };
+		6504D25B28457071009C3193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6504D25D28457071009C3193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6504D26028457071009C3193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6504D26228457071009C3193 /* power.textClipping */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = power.textClipping; sourceTree = "<group>"; };
+		6504D26328457071009C3193 /* 􀆕.textClipping */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "􀆕.textClipping"; sourceTree = "<group>"; };
+		6504D26428457071009C3193 /* option@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "option@2x.png"; sourceTree = "<group>"; };
+		6504D26728457071009C3193 /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		6504D26828457071009C3193 /* businessCardIIApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = businessCardIIApp.swift; sourceTree = "<group>"; };
+		6504D26A28457071009C3193 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6504D26D28457071009C3193 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6504D26E28457071009C3193 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		65077D1A2845B1D7005DC1C9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		652FE1112845777E00BC72AD /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
+		652FE12B284577BD00BC72AD /* Swifter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swifter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		652FE12D284577BD00BC72AD /* Swifter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swifter.h; sourceTree = "<group>"; };
+		652FE12E284577BD00BC72AD /* Swifter.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Swifter.docc; sourceTree = "<group>"; };
+		652FE13B284577BE00BC72AD /* SwifterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterTests.swift; sourceTree = "<group>"; };
+		6544E0BD2845958E00C9A67C /* Finance_App01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finance_App01.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65CD6744284597EA00CC0B5A /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65CD6747284597EF00CC0B5A /* Pods_Finance_App01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Finance_App01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65CD674C2845981500CC0B5A /* CreateML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CreateML.framework; path = System/Library/Frameworks/CreateML.framework; sourceTree = SDKROOT; };
+		86B445459D36AE568961E65A /* Pods_Finance_App01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Finance_App01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9862E9886C136292718E7A9 /* Pods-Finance_App01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finance_App01.debug.xcconfig"; path = "Target Support Files/Pods-Finance_App01/Pods-Finance_App01.debug.xcconfig"; sourceTree = "<group>"; };
+		F2A84048D2CAC9BCEB91B6CD /* Pods-Finance_App01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finance_App01.release.xcconfig"; path = "Target Support Files/Pods-Finance_App01/Pods-Finance_App01.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6504D1FF2845704D009C3193 /* Frameworks */ = {
+		652FE128284577BD00BC72AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65CD673E2845979F00CC0B5A /* MBProgressHUD in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6544E0BA2845958E00C9A67C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65CD673F284597DC00CC0B5A /* SwifteriOS.framework in Frameworks */,
+				65CD6748284597EF00CC0B5A /* Pods_Finance_App01.framework in Frameworks */,
+				65CD674B284597FE00CC0B5A /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,15 +220,21 @@
 		6504D1F92845704D009C3193 = {
 			isa = PBXGroup;
 			children = (
+				652FE1112845777E00BC72AD /* Swifter.xcodeproj */,
 				6504D2042845704D009C3193 /* Finance_App01 */,
+				652FE12C284577BD00BC72AD /* Swifter */,
+				652FE13A284577BE00BC72AD /* SwifterTests */,
 				6504D2032845704D009C3193 /* Products */,
+				CE7AC9194B166170E3E370E4 /* Pods */,
+				EA3C0A729863140BC816B943 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		6504D2032845704D009C3193 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6504D2022845704D009C3193 /* Finance_App01.app */,
+				652FE12B284577BD00BC72AD /* Swifter.framework */,
+				6544E0BD2845958E00C9A67C /* Finance_App01.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,36 +242,387 @@
 		6504D2042845704D009C3193 /* Finance_App01 */ = {
 			isa = PBXGroup;
 			children = (
-				6504D2052845704D009C3193 /* AppDelegate.swift */,
-				6504D2072845704D009C3193 /* SceneDelegate.swift */,
-				6504D2092845704D009C3193 /* ViewController.swift */,
-				6504D20B2845704D009C3193 /* Main.storyboard */,
-				6504D2112845704D009C3193 /* Assets.xcassets */,
-				6504D2132845704D009C3193 /* LaunchScreen.storyboard */,
-				6504D2162845704D009C3193 /* Info.plist */,
+				6504D21C28457071009C3193 /* Finance_App01 */,
 				6504D20E2845704D009C3193 /* Finance_App01.xcdatamodeld */,
 			);
 			path = Finance_App01;
 			sourceTree = "<group>";
 		};
+		6504D21C28457071009C3193 /* Finance_App01 */ = {
+			isa = PBXGroup;
+			children = (
+				6504D21D28457071009C3193 /* HackerNews */,
+				6504D22628457071009C3193 /* Protocols  */,
+				6504D22828457071009C3193 /* Models */,
+				6504D23E28457071009C3193 /* Controller */,
+				6504D24E28457071009C3193 /* Workers */,
+				6504D25228457071009C3193 /* Views */,
+				6504D25E28457071009C3193 /* Assets */,
+				6504D26628457071009C3193 /* businessCardII */,
+				6504D26B28457071009C3193 /* Protocols */,
+				6504D26D28457071009C3193 /* Info.plist */,
+				6504D26E28457071009C3193 /* SceneDelegate.swift */,
+				6504D25128457071009C3193 /* AppDelegate.swift */,
+			);
+			path = Finance_App01;
+			sourceTree = "<group>";
+		};
+		6504D21D28457071009C3193 /* HackerNews */ = {
+			isa = PBXGroup;
+			children = (
+				6504D21E28457071009C3193 /* Images */,
+				6504D21F28457071009C3193 /* Assets.xcassets */,
+				6504D22028457071009C3193 /* Models */,
+				6504D22128457071009C3193 /* Preview Content */,
+				6504D22328457071009C3193 /* HackerNewsApp.swift */,
+				6504D22428457071009C3193 /* Icons */,
+				6504D22528457071009C3193 /* Views */,
+			);
+			path = HackerNews;
+			sourceTree = "<group>";
+		};
+		6504D21E28457071009C3193 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		6504D22028457071009C3193 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6504D22128457071009C3193 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6504D22228457071009C3193 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6504D22428457071009C3193 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		6504D22528457071009C3193 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6504D22628457071009C3193 /* Protocols  */ = {
+			isa = PBXGroup;
+			children = (
+				6504D22728457071009C3193 /* MBProgAnimate.swift */,
+			);
+			path = "Protocols ";
+			sourceTree = "<group>";
+		};
+		6504D22828457071009C3193 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6504D23028457071009C3193 /* Helpers */,
+				6504D22928457071009C3193 /* Constants.swift */,
+				6504D22A28457071009C3193 /* calcLogic.swift */,
+				6504D22B28457071009C3193 /* SearchResults.swift */,
+				6504D22C28457071009C3193 /* News Models */,
+				6504D22E28457071009C3193 /* TimeByMonthModel.swift */,
+				6504D22F28457071009C3193 /* Asset.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6504D22C28457071009C3193 /* News Models */ = {
+			isa = PBXGroup;
+			children = (
+				6504D22D28457071009C3193 /* PostData.swift */,
+			);
+			path = "News Models";
+			sourceTree = "<group>";
+		};
+		6504D23028457071009C3193 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6504D23428457071009C3193 /* CreateMLmodels */,
+				6504D23128457071009C3193 /* TableViewControllerLogger.swift */,
+				6504D23228457071009C3193 /* ViewControllerLogger.swift */,
+				6504D23328457071009C3193 /* APIService.swift */,
+				6504D23A28457071009C3193 /* APIWorker.swift */,
+				6504D23B28457071009C3193 /* DCALogic.swift */,
+				6504D23C28457071009C3193 /* Extensions.swift */,
+				6504D23D28457071009C3193 /* newsAPIWorker.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6504D23428457071009C3193 /* CreateMLmodels */ = {
+			isa = PBXGroup;
+			children = (
+				6504D23528457071009C3193 /* TwitterClassifer.mlmodel */,
+				6504D23628457071009C3193 /* twitter-sanders-apple3.csv */,
+				6504D23728457071009C3193 /* twitter-sanders-apple3.zip */,
+				6504D23828457071009C3193 /* twitterClassifier.playground */,
+				6504D23928457071009C3193 /* createTwitterMLmodel.swift */,
+			);
+			path = CreateMLmodels;
+			sourceTree = "<group>";
+		};
+		6504D23E28457071009C3193 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6504D23F28457071009C3193 /* DateSelectionTableViewController.swift */,
+				6504D24028457071009C3193 /* SearchTableViewController.swift */,
+				6504D24128457071009C3193 /* NewsTableViewController.swift */,
+				6504D24228457071009C3193 /* Camera_Controllers */,
+				6504D24828457071009C3193 /* CalculatorIII.swift */,
+				6504D24928457071009C3193 /* New Group */,
+				6504D24A28457071009C3193 /* SearchTableViewCell.swift */,
+				6504D24B28457071009C3193 /* PageViewController.swift */,
+				6504D24C28457071009C3193 /* CalculatorViewTableControllerViewController.swift */,
+				6504D24D28457071009C3193 /* TwitterPredictViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6504D24228457071009C3193 /* Camera_Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6504D24328457071009C3193 /* PDFScannerApp.swift */,
+				6504D24428457071009C3193 /* PDFScannerAppDelegate.swift */,
+				6504D24528457071009C3193 /* CTScanTextApp.swift */,
+				6504D24628457071009C3193 /* CTScanTextViewController.swift */,
+				6504D24728457071009C3193 /* PDFScannerViewController.swift */,
+			);
+			path = Camera_Controllers;
+			sourceTree = "<group>";
+		};
+		6504D24928457071009C3193 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		6504D24E28457071009C3193 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				6504D24F28457071009C3193 /* News */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		6504D24F28457071009C3193 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				6504D25028457071009C3193 /* WebView.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		6504D25228457071009C3193 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6504D25328457071009C3193 /* SearchPlaceholderView.swift */,
+				6504D25428457071009C3193 /* News_Views */,
+				6504D25828457071009C3193 /* HomeCardViewController.swift */,
+				6504D25928457071009C3193 /* Financial_Calc_II-Bridging-Header.h */,
+				6504D25A28457071009C3193 /* LaunchScreen.storyboard */,
+				6504D25C28457071009C3193 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6504D25428457071009C3193 /* News_Views */ = {
+			isa = PBXGroup;
+			children = (
+				6504D25528457071009C3193 /* DetailView.swift */,
+				6504D25628457071009C3193 /* ContentView.swift */,
+				6504D25728457071009C3193 /* Camera_Scanner */,
+			);
+			path = News_Views;
+			sourceTree = "<group>";
+		};
+		6504D25728457071009C3193 /* Camera_Scanner */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Camera_Scanner;
+			sourceTree = "<group>";
+		};
+		6504D25E28457071009C3193 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6504D25F28457071009C3193 /* TrainingData  */,
+				6504D26028457071009C3193 /* Assets.xcassets */,
+				6504D26128457071009C3193 /* Icons */,
+				6504D26528457071009C3193 /* New Group */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		6504D25F28457071009C3193 /* TrainingData  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "TrainingData ";
+			sourceTree = "<group>";
+		};
+		6504D26128457071009C3193 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				6504D26228457071009C3193 /* power.textClipping */,
+				6504D26328457071009C3193 /* 􀆕.textClipping */,
+				6504D26428457071009C3193 /* option@2x.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		6504D26528457071009C3193 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		6504D26628457071009C3193 /* businessCardII */ = {
+			isa = PBXGroup;
+			children = (
+				6504D26728457071009C3193 /* InfoView.swift */,
+				6504D26828457071009C3193 /* businessCardIIApp.swift */,
+				6504D26928457071009C3193 /* Preview Content */,
+			);
+			path = businessCardII;
+			sourceTree = "<group>";
+		};
+		6504D26928457071009C3193 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6504D26A28457071009C3193 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6504D26B28457071009C3193 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		652FE1122845777E00BC72AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				652FE11B2845777E00BC72AD /* SwifteriOS.framework */,
+				652FE11D2845777E00BC72AD /* SwifterMac.framework */,
+				652FE11F2845777E00BC72AD /* SwifterDemoiOS.app */,
+				652FE1212845777E00BC72AD /* SwifterDemoMac.app */,
+				652FE1232845777E00BC72AD /* SwifterTests.xctest */,
+				652FE1252845777E00BC72AD /* Finance_App01.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		652FE12C284577BD00BC72AD /* Swifter */ = {
+			isa = PBXGroup;
+			children = (
+				652FE12D284577BD00BC72AD /* Swifter.h */,
+				652FE12E284577BD00BC72AD /* Swifter.docc */,
+			);
+			path = Swifter;
+			sourceTree = "<group>";
+		};
+		652FE13A284577BE00BC72AD /* SwifterTests */ = {
+			isa = PBXGroup;
+			children = (
+				652FE13B284577BE00BC72AD /* SwifterTests.swift */,
+			);
+			path = SwifterTests;
+			sourceTree = "<group>";
+		};
+		CE7AC9194B166170E3E370E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9862E9886C136292718E7A9 /* Pods-Finance_App01.debug.xcconfig */,
+				F2A84048D2CAC9BCEB91B6CD /* Pods-Finance_App01.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA3C0A729863140BC816B943 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65077D1A2845B1D7005DC1C9 /* MBProgressHUD.framework */,
+				65CD674C2845981500CC0B5A /* CreateML.framework */,
+				65CD6747284597EF00CC0B5A /* Pods_Finance_App01.framework */,
+				65CD6744284597EA00CC0B5A /* MBProgressHUD.framework */,
+				86B445459D36AE568961E65A /* Pods_Finance_App01.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		652FE126284577BD00BC72AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652FE13D284577BE00BC72AD /* Swifter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		6504D2012845704D009C3193 /* Finance_App01 */ = {
+		652FE12A284577BD00BC72AD /* Swifter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6504D2192845704D009C3193 /* Build configuration list for PBXNativeTarget "Finance_App01" */;
+			buildConfigurationList = 652FE142284577BE00BC72AD /* Build configuration list for PBXNativeTarget "Swifter" */;
 			buildPhases = (
-				6504D1FE2845704D009C3193 /* Sources */,
-				6504D1FF2845704D009C3193 /* Frameworks */,
-				6504D2002845704D009C3193 /* Resources */,
+				652FE126284577BD00BC72AD /* Headers */,
+				652FE127284577BD00BC72AD /* Sources */,
+				652FE128284577BD00BC72AD /* Frameworks */,
+				652FE129284577BD00BC72AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swifter;
+			packageProductDependencies = (
+				65CD673D2845979F00CC0B5A /* MBProgressHUD */,
+			);
+			productName = Swifter;
+			productReference = 652FE12B284577BD00BC72AD /* Swifter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6544E0BC2845958E00C9A67C /* Finance_App01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6544E0D12845958F00C9A67C /* Build configuration list for PBXNativeTarget "Finance_App01" */;
+			buildPhases = (
+				A178F12102E8D7EB1F0F95B7 /* [CP] Check Pods Manifest.lock */,
+				6544E0B92845958E00C9A67C /* Sources */,
+				6544E0BA2845958E00C9A67C /* Frameworks */,
+				6544E0BB2845958E00C9A67C /* Resources */,
+				65CD6741284597DD00CC0B5A /* Embed Frameworks */,
+				5937A81FDD5DB25B2D4C373E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Finance_App01;
+			packageProductDependencies = (
+				65CD674A284597FE00CC0B5A /* SwiftyJSON */,
+			);
 			productName = Finance_App01;
-			productReference = 6504D2022845704D009C3193 /* Finance_App01.app */;
+			productReference = 6544E0BD2845958E00C9A67C /* Finance_App01.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +635,10 @@
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					6504D2012845704D009C3193 = {
+					652FE12A284577BD00BC72AD = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					6544E0BC2845958E00C9A67C = {
 						CreatedOnToolsVersion = 13.3;
 					};
 				};
@@ -114,57 +652,213 @@
 				Base,
 			);
 			mainGroup = 6504D1F92845704D009C3193;
+			packageReferences = (
+				652FE10B2845766700BC72AD /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				652FE14D28458CE700BC72AD /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+			);
 			productRefGroup = 6504D2032845704D009C3193 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 652FE1122845777E00BC72AD /* Products */;
+					ProjectRef = 652FE1112845777E00BC72AD /* Swifter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				6504D2012845704D009C3193 /* Finance_App01 */,
+				652FE12A284577BD00BC72AD /* Swifter */,
+				6544E0BC2845958E00C9A67C /* Finance_App01 */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		652FE11B2845777E00BC72AD /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = 652FE11A2845777E00BC72AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		652FE11D2845777E00BC72AD /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = 652FE11C2845777E00BC72AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		652FE11F2845777E00BC72AD /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = 652FE11E2845777E00BC72AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		652FE1212845777E00BC72AD /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = 652FE1202845777E00BC72AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		652FE1232845777E00BC72AD /* SwifterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwifterTests.xctest;
+			remoteRef = 652FE1222845777E00BC72AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		652FE1252845777E00BC72AD /* Finance_App01.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Finance_App01.app;
+			remoteRef = 652FE1242845777E00BC72AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
-		6504D2002845704D009C3193 /* Resources */ = {
+		652FE129284577BD00BC72AD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6504D2152845704D009C3193 /* LaunchScreen.storyboard in Resources */,
-				6504D2122845704D009C3193 /* Assets.xcassets in Resources */,
-				6504D20D2845704D009C3193 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6544E0BB2845958E00C9A67C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5937A81FDD5DB25B2D4C373E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Finance_App01/Pods-Finance_App01-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Finance_App01/Pods-Finance_App01-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Finance_App01/Pods-Finance_App01-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A178F12102E8D7EB1F0F95B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Finance_App01-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		6504D1FE2845704D009C3193 /* Sources */ = {
+		652FE127284577BD00BC72AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6504D20A2845704D009C3193 /* ViewController.swift in Sources */,
-				6504D2062845704D009C3193 /* AppDelegate.swift in Sources */,
-				6504D2082845704D009C3193 /* SceneDelegate.swift in Sources */,
-				6504D2102845704D009C3193 /* Finance_App01.xcdatamodeld in Sources */,
+				652FE12F284577BD00BC72AD /* Swifter.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6544E0B92845958E00C9A67C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65CD6704284596C000CC0B5A /* Assets.xcassets in Sources */,
+				65CD6705284596C000CC0B5A /* Preview Assets.xcassets in Sources */,
+				65CD6706284596C000CC0B5A /* HackerNewsApp.swift in Sources */,
+				65CD6707284596C000CC0B5A /* MBProgAnimate.swift in Sources */,
+				65CD6709284596C000CC0B5A /* TwitterClassifer.mlmodel in Sources */,
+				65CD670D284596C100CC0B5A /* createTwitterMLmodel.swift in Sources */,
+				65CD670E284596C100CC0B5A /* TableViewControllerLogger.swift in Sources */,
+				65CD670F284596C100CC0B5A /* ViewControllerLogger.swift in Sources */,
+				65CD6710284596C100CC0B5A /* APIService.swift in Sources */,
+				65CD6711284596C100CC0B5A /* APIWorker.swift in Sources */,
+				65CD6712284596C100CC0B5A /* DCALogic.swift in Sources */,
+				65CD6713284596C100CC0B5A /* Extensions.swift in Sources */,
+				65CD6714284596C100CC0B5A /* newsAPIWorker.swift in Sources */,
+				65CD6715284596C100CC0B5A /* Constants.swift in Sources */,
+				65CD6716284596C100CC0B5A /* calcLogic.swift in Sources */,
+				65CD6717284596C100CC0B5A /* SearchResults.swift in Sources */,
+				65CD6718284596C100CC0B5A /* PostData.swift in Sources */,
+				65CD6719284596C100CC0B5A /* TimeByMonthModel.swift in Sources */,
+				65CD671A284596C100CC0B5A /* Asset.swift in Sources */,
+				65CD671B284596C100CC0B5A /* DateSelectionTableViewController.swift in Sources */,
+				65CD671C284596C100CC0B5A /* SearchTableViewController.swift in Sources */,
+				65CD671D284596C100CC0B5A /* NewsTableViewController.swift in Sources */,
+				65CD671E284596C100CC0B5A /* PDFScannerApp.swift in Sources */,
+				65CD671F284596C100CC0B5A /* PDFScannerAppDelegate.swift in Sources */,
+				65CD6720284596C100CC0B5A /* CTScanTextApp.swift in Sources */,
+				65CD6721284596C100CC0B5A /* CTScanTextViewController.swift in Sources */,
+				65CD6722284596C100CC0B5A /* PDFScannerViewController.swift in Sources */,
+				65CD6723284596C100CC0B5A /* CalculatorIII.swift in Sources */,
+				65CD6724284596C100CC0B5A /* SearchTableViewCell.swift in Sources */,
+				65CD6725284596C100CC0B5A /* PageViewController.swift in Sources */,
+				65CD6726284596C100CC0B5A /* CalculatorViewTableControllerViewController.swift in Sources */,
+				65CD6727284596C100CC0B5A /* TwitterPredictViewController.swift in Sources */,
+				65CD6728284596C100CC0B5A /* WebView.swift in Sources */,
+				65CD6729284596C100CC0B5A /* SearchPlaceholderView.swift in Sources */,
+				65CD672A284596C100CC0B5A /* DetailView.swift in Sources */,
+				65CD672B284596C100CC0B5A /* ContentView.swift in Sources */,
+				65CD672C284596C100CC0B5A /* HomeCardViewController.swift in Sources */,
+				65CD672D284596C100CC0B5A /* Financial_Calc_II-Bridging-Header.h in Sources */,
+				65CD672E284596C100CC0B5A /* LaunchScreen.storyboard in Sources */,
+				65CD672F284596C100CC0B5A /* Main.storyboard in Sources */,
+				65CD6730284596C100CC0B5A /* Assets.xcassets in Sources */,
+				65CD6731284596C100CC0B5A /* power.textClipping in Sources */,
+				65CD6732284596C100CC0B5A /* 􀆕.textClipping in Sources */,
+				65CD6733284596C100CC0B5A /* option@2x.png in Sources */,
+				65CD6734284596C100CC0B5A /* InfoView.swift in Sources */,
+				65CD6735284596C100CC0B5A /* businessCardIIApp.swift in Sources */,
+				65CD6736284596C100CC0B5A /* Preview Assets.xcassets in Sources */,
+				65CD6739284596C100CC0B5A /* SceneDelegate.swift in Sources */,
+				65CD673A284596C100CC0B5A /* AppDelegate.swift in Sources */,
+				65CD673B284596C100CC0B5A /* Finance_App01.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6504D20B2845704D009C3193 /* Main.storyboard */ = {
+		6504D25A28457071009C3193 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6504D20C2845704D009C3193 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6504D2132845704D009C3193 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6504D2142845704D009C3193 /* Base */,
+				6504D25B28457071009C3193 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6504D25C28457071009C3193 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6504D25D28457071009C3193 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -284,11 +978,73 @@
 			};
 			name = Release;
 		};
-		6504D21A2845704D009C3193 /* Debug */ = {
+		652FE143284577BE00BC72AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PCTB5RL5K6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nobodylikesme.Finance-App00.Swifter";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		652FE144284577BE00BC72AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PCTB5RL5K6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nobodylikesme.Finance-App00.Swifter";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6544E0D22845958F00C9A67C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9862E9886C136292718E7A9 /* Pods-Finance_App01.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PCTB5RL5K6;
@@ -304,7 +1060,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nobodylikesme.Finance-App00.Finance-App01";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nobodylikesme.Finance-App01.Finance-App01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -312,11 +1068,13 @@
 			};
 			name = Debug;
 		};
-		6504D21B2845704D009C3193 /* Release */ = {
+		6544E0D32845958F00C9A67C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2A84048D2CAC9BCEB91B6CD /* Pods-Finance_App01.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PCTB5RL5K6;
@@ -332,7 +1090,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nobodylikesme.Finance-App00.Finance-App01";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nobodylikesme.Finance-App01.Finance-App01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -352,16 +1110,57 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6504D2192845704D009C3193 /* Build configuration list for PBXNativeTarget "Finance_App01" */ = {
+		652FE142284577BE00BC72AD /* Build configuration list for PBXNativeTarget "Swifter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6504D21A2845704D009C3193 /* Debug */,
-				6504D21B2845704D009C3193 /* Release */,
+				652FE143284577BE00BC72AD /* Debug */,
+				652FE144284577BE00BC72AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6544E0D12845958F00C9A67C /* Build configuration list for PBXNativeTarget "Finance_App01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6544E0D22845958F00C9A67C /* Debug */,
+				6544E0D32845958F00C9A67C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		652FE10B2845766700BC72AD /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		652FE14D28458CE700BC72AD /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		65CD673D2845979F00CC0B5A /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 652FE14D28458CE700BC72AD /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+		65CD674A284597FE00CC0B5A /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 652FE10B2845766700BC72AD /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		6504D20E2845704D009C3193 /* Finance_App01.xcdatamodeld */ = {
