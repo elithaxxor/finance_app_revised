@@ -16,6 +16,8 @@
 // https://developer.apple.com/documentation/combine
 
 
+
+// TODO : 1. FETCH FINANCE DOCS 2. SET UP NEWSPAPER API. 3. LIVE NEWS FEED UNDER SEARCHRESULTS 4. PDF SCANNER 5. ROTATE VIEWS FOR CALC
 import UIKit
 import Combine
 import MBProgressHUD
@@ -31,12 +33,17 @@ class SearchTableViewController: TableViewControllerLogger, MBProgAnimate {
     
     // Class Instances //
     private let runAPI = APIWorker()
-    private var subscribers = Set<AnyCancellable>() // for fetch
+    private let viewCell = SearchTableViewCell()
+
+
     private var searchResults: SearchResults? // return Models fetched from API
+    var subscribers = Set<AnyCancellable>() // for fetch
+    
 
     @Published private var mode: Mode = .onboarding // UI state (onboarding or searcahing)
     @Published private var searchQuery = String() // search query (nav bar)
 
+    var homeTextValueVC: String?
 
 
     // [ensures UISearchBar loads everytime]-- instantiates UISearchController
@@ -54,12 +61,18 @@ class SearchTableViewController: TableViewControllerLogger, MBProgAnimate {
         super.viewDidLoad()
         createLogFile()
         NSLog("[LOGGING--> <START> [SEARCH VC]")
-
+        print(homeTextValueVC ?? "DEBUG ME")
         setupNavBar()
         setupTableView() // FOR UI, when no search results.
         observeForm()
+
         NSLog("[LOGGING--> <END> [CALCULATOR VC]")
 
+    }
+
+
+    override func viewWillAppear(_ animated: Bool) {
+       // viewCell.configure(with: searchResults.self)
     }
     
     private func setupNavBar() {
@@ -70,9 +83,15 @@ class SearchTableViewController: TableViewControllerLogger, MBProgAnimate {
     
     @IBAction func calcBtn(_ sender: UIBarButtonItem) {
         print("[+] Segue to Basic Calcualtor")
-        self.performSegue(withIdentifier: "toBasicCalc", sender: sender.action)
-
+        self.performSegue(withIdentifier: "toBasicCalc", sender: self)
     }
+
+
+    @IBAction func twitterBtn(_sender: Any) {
+        print("[!] Twitter Btn Pressed! ")
+        //        guard self.performSegue(withIdentifier: "toBasicCalc", sender: sender) else { fatalError("failed to segue twitter btn") }
+    }
+
 
     private func setupTableView(){
         tableView.tableFooterView = UIView() // removes lineitems on navviews
@@ -81,35 +100,42 @@ class SearchTableViewController: TableViewControllerLogger, MBProgAnimate {
 
     
     
-    @IBAction func searchMenu (_ sender: UIBarButtonItem) {
-        print(sender.title ?? "FIX ME [searchMenu Action]")
+    @IBAction func searchBtn (_ sender: UIButton) {
+        print("[!] SearchTable button pressed")
+        performSegue(withIdentifier: "searchBtn2FinCalc", sender: self)
     }
     
     // [COMPANY SEARCH BOTTOM NAV ITEMS]
-    @IBAction func searchNewsBtnPressed(_ sender: UIButton) {
+    @IBAction func dcf2news(_ sender: UIButton) {
         print("User pressed search new btn on Company Search, moving to news page")
         print (sender.buttonType)
-        performSegue(withIdentifier: "search2newsBtn", sender: nil)
+        performSegue(withIdentifier: "search2news", sender: self)
     }
     
     @IBAction func searchClassicCalc(_ sender: UIButton) {
         print("User pressed search new btn on Company Search, moving to calc page")
         print (sender.buttonType)
-
-        performSegue(withIdentifier: "showClassicCalc", sender: nil)
+        performSegue(withIdentifier: "search2calc", sender: self)
     }
     
 
     // [DCF PAGE]
     @IBAction func dcf2News(_ sender: UIBarButtonItem) {
         print("User pressed search new btn on [DCF page,] moving to news ")
-        performSegue(withIdentifier: "dcf2News", sender: nil)
+        performSegue(withIdentifier: "dcf2News", sender: self)
     }
     @IBAction func dcf2Calc(_ sender: UIBarButtonItem) {
         print("User pressed search new btn on [DCF page], moving to [calc] ")
-        performSegue(withIdentifier: "dcf2Calc", sender: nil)
+        performSegue(withIdentifier: "dcf2Calc", sender: self)
     }
-    
+
+    @IBOutlet weak var searchInput : UITextField! {
+        didSet {
+            print("[!] Search Input passed From homeView \(String(describing: searchInput.text))")
+        }
+    }
+
+
 
     
     // set up timer for response, while watches for Publisher to change [creates a waitingQueue (.debounce) on main thread) for NavBar in
@@ -119,8 +145,9 @@ class SearchTableViewController: TableViewControllerLogger, MBProgAnimate {
             .sink { [ unowned self ] (searchQuery) in
                 MBProgressHUD.showAdded(to: self.view, animated: true)
                 guard !searchQuery.isEmpty else  { return }
+
                 self.showLoadingAnimation()
-                
+                print("[+] Search Query Returned \(searchQuery)")
                 self.runAPI.fetchSymbols(keywords: searchQuery).sink { (completion) in
                     switch completion {
                         case .failure(let error):
@@ -181,6 +208,7 @@ class SearchTableViewController: TableViewControllerLogger, MBProgAnimate {
         {
             let searchResult  = searchResults.allResults[indexPath.row]
             cell.configure(with: searchResult)
+            return cell 
         }
         return cell
     }
@@ -222,18 +250,27 @@ class SearchTableViewController: TableViewControllerLogger, MBProgAnimate {
 
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any? ) {
-        if segue.identifier == "showCalcualtor",
-           let destination = segue.destination as? CalculatorViewTableControllerViewController,
-           let asset = sender as? Asset {
-            destination.asset = asset
+        if segue.identifier == "showCalcualtor" {
+            let destination = segue.destination as? CalculatorViewTableControllerViewController
+            let asset = sender as? Asset
+            destination?.asset = asset
+
         }
+        if segue.identifier == "searchBtn2FinCalc" {
+            let searchBtnDestination = segue.destination as? CalculatorViewTableControllerViewController
+            searchBtnDestination?.searchTableSearchResults = searchResults
+            searchBtnDestination?.searchTableSubscribers = subscribers
+            searchBtnDestination?.searchTableSearchQuery = searchQuery
+        }
+
     }
 }
 
 
+
+
 // [ Search Nav Bar  ]
 extension SearchTableViewController: UISearchResultsUpdating, UISearchControllerDelegate {
-    
     func updateSearchResults(for searchController: UISearchController) {
         print(searchController.searchBar.text ?? "DEBUG ME")
         guard let searchQuery = searchController.searchBar.text, !searchQuery.isEmpty else { return }
@@ -248,3 +285,15 @@ extension SearchTableViewController: UISearchResultsUpdating, UISearchController
 }
 
 
+
+/*
+ // Class Instances //
+ private let runAPI = APIWorker()
+ private var searchResults: SearchResults? // return Models fetched from API
+ var subscribers = Set<AnyCancellable>() // for fetch
+
+
+ @Published private var mode: Mode = .onboarding // UI state (onboarding or searcahing)
+ @Published private var searchQuery = String() // search query (nav bar)
+
+ */

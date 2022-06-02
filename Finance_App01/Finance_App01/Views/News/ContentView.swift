@@ -9,27 +9,27 @@
 //
 //struct ContentView: View {
 //    @ObservedObject var networkManager = NetworkManager() // copy NetworkManager protocol (listener for NetworkManager)
-//    
+//
 //    var body: some View {
 //        // Color("Background")
-//        
+//
 //        NavigationView
-//        
+//
 //        {
-//            
+//
 //            List(networkManager.posts)
-//            
+//
 //            { post in
-//                // navigation link creates the ">" on UI, indicating a link is available 
+//                // navigation link creates the ">" on UI, indicating a link is available
 //                NavigationLink(destination: DetailView(url: post.url)){
 //                    Text(String(post.points))
 //                    Text(post.title)
 //                }
 //            }
-//            
+//
 //            .navigationTitle("H4XXOR NEWS")
 //        }
-//        
+//
 //        .onAppear{
 //            self.networkManager.fetch() // auto-fetch (using method declared in NetworkManager)
 //        }

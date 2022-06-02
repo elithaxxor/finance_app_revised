@@ -16,7 +16,7 @@ import UIKit
 import SwiftyJSON
 import CoreML
 import SwifteriOS // Embedded Twitter Framework
-
+import Combine
 
 public enum predictionsError: Error {
     case badPrediction
@@ -39,8 +39,8 @@ class TwitterPredictViewController: ViewControllerLogger {
 
     @IBAction func fetchBtn(_sender: Any) {
         print("[!] From FetchBtn--> \(String(describing: textField.text))")
-        fetchTweets(textField.text ?? "DEBUG ME")
 
+        fetchTweets(textField.text ?? "DEBUG ME")
     }
 
     let consumerKey: String = "6HE1wYuuAOF9UQvxtI9aMlcfX"
@@ -48,6 +48,17 @@ class TwitterPredictViewController: ViewControllerLogger {
     let twitterPath: String = "/Users/adelal-aali/Desktop/Finance_App01/twitter-sanders-apple3.csv"
     let classificationPath: String = "/Users/adelal-aali/Desktop/Finance_App01/TwitterClassifer.mlmodel"
 
+   // @Published var subscribers = Set<AnyCancellable>() // for fetch
+    var stock : String = ""
+
+    // MARK: Varibles from SearchView Controller
+    var searchViewTextView: String? {
+        didSet {
+            print("[!] searchview text field passed \(String(describing: searchViewTextView))")
+            fetchBtn(_sender: self.searchViewTextView ?? "DEBUG ME")
+        }
+    }
+    
 
     // TODO: Mark For Debugging !!
     //let twitterClassifer = TwitterClassifer()
@@ -68,7 +79,10 @@ class TwitterPredictViewController: ViewControllerLogger {
         createLogFile()
         let swifter = Swifter(consumerKey: consumerKey , consumerSecret: privKey )
         NSLog("[LOGGING--> <START> [Twitter-Classifcation VC]")
-        fetchTweets(swifter.self)
+        //TODO: MAY HAVE TO DEBUG
+        if textField.text != nil {
+            fetchTweets(swifter.self)
+        }
     }
 
 
@@ -126,20 +140,6 @@ class TwitterPredictViewController: ViewControllerLogger {
         })
     }
 
-
-// TODO: Move prediction model from ^ @IBACTION
-//    private func makePrediction(with tweets: String, predictions: [TwitterClassiferInput]) throws -> predictionsError {
-////        do {
-//            var sentimentScore = 0
-//            for pred in predictions {
-//                let sentiment = pred.label
-//                if sentiment == "Pos" { sentiment += 1
-//                } else if sentiment == "Neg"{ sentimentScore -= 1}
-//                updateUI(sentimentScore: sentimentScore)
-//            }
-//        } catch { throw predictionsError.badPrediction }
-//    }
-
     func updateUI(sentimentScore: Int ) {
 
         if sentimentScore > 20 {
@@ -159,6 +159,21 @@ class TwitterPredictViewController: ViewControllerLogger {
         }
     }
 }
+
+
+
+// TODO: Move prediction model from ^ @IBACTION
+//    private func makePrediction(with tweets: String, predictions: [TwitterClassiferInput]) throws -> predictionsError {
+////        do {
+//            var sentimentScore = 0
+//            for pred in predictions {
+//                let sentiment = pred.label
+//                if sentiment == "Pos" { sentiment += 1
+//                } else if sentiment == "Neg"{ sentimentScore -= 1}
+//                updateUI(sentimentScore: sentimentScore)
+//            }
+//        } catch { throw predictionsError.badPrediction }
+//    }
 
 
 

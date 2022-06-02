@@ -12,7 +12,7 @@ import Combine
 @IBDesignable
 class CalculatorViewTableControllerViewController: TableViewControllerLogger {
 
-   // let DateVC = DateSelectionTableViewController()
+    // let DateVC = DateSelectionTableViewController()
 
     @IBOutlet weak var symbolLabel : UILabel!
     @IBOutlet weak var assetNameLabel : UILabel!
@@ -55,8 +55,29 @@ class CalculatorViewTableControllerViewController: TableViewControllerLogger {
     @Published private var initialDateOfInvestment: Int?
     @Published private var initialInvestmentAmt : Int?
     @Published private var monthDCF : Int?
-    private var subscribers = Set<AnyCancellable>()
 
+    // MARK: Variables from SearchTableVC Segue
+    var searchTableSearchResults : SearchResults? {
+        didSet {
+            print("[!] SearchResults set from SeachTableVC \(String(describing: searchTableSearchResults))")
+        }
+
+    }
+    var searchTableSearchQuery : String? {
+        didSet {
+            print("[!] SearchResults set from searchTableVC \(String(describing: searchTableSearchQuery))")
+        }
+    }
+
+    var searchTableSubscribers : Set<AnyCancellable>? {
+        didSet {
+            print("[!] SearchResults set from searchTableVC \(String(describing: searchTableSubscribers))")
+        }
+    }
+    
+
+    // MARK: Class Variables 
+    private var subscribers = Set<AnyCancellable>()
     public var asset : Asset? // stores data from APICall
     private let dcaLogic = DCALogic()
 
@@ -83,7 +104,7 @@ class CalculatorViewTableControllerViewController: TableViewControllerLogger {
         setupTextFields()
         observeForm()
         setupSlider()
-        resetViews() 
+        resetViews()
         NSLog("[LOGGING--> <END> [CALCULATOR VC]")
     }
 
@@ -183,7 +204,7 @@ class CalculatorViewTableControllerViewController: TableViewControllerLogger {
 
     //MARK: Intended to provide views with correct symbols / vals
     private func setupViews() {
-        symbolLabel.text = asset?.searchResults.symbol
+        symbolLabel.text = asset?.searchResults.symbol ?? "DEFAULT VALUE"
         assetNameLabel.text = asset?.searchResults.name
         amountInvestedLabel.text = asset?.searchResults.currency
         currencyLabels.forEach { ( label) in

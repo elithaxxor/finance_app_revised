@@ -12,19 +12,18 @@
 // works with: struct APIWorker 
 
 
+// https://app.quicktype.io
 import Foundation
 
 // MARK: Model for indivdual Stock Details
 struct SearchResults: Decodable {
     let allResults: [SearchResult]
-    
     enum CodingKeys: String, CodingKey {
         case allResults = "bestMatches"
     }
 }
 
 
-// MARK: Model mimicking json from API
 struct SearchResult: Decodable {
     let name: String
     let symbol: String

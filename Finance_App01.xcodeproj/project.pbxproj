@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		652E1BD128482A6B00F9A155 /* DocsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652E1BD028482A6B00F9A155 /* DocsTableViewCell.swift */; };
+		652E1BD3284868CE00F9A155 /* FinanceDocsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652E1BD2284868CE00F9A155 /* FinanceDocsWorker.swift */; };
+		652E1BD628493CF300F9A155 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652E1BD528493CF300F9A155 /* NewsTableViewController.swift */; };
+		652E1BD8284955BE00F9A155 /* NewsAPIWorker .swift in Sources */ = {isa = PBXBuildFile; fileRef = 652E1BD7284955BE00F9A155 /* NewsAPIWorker .swift */; };
+		652E1BDA284955E200F9A155 /* newsAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652E1BD9284955E200F9A155 /* newsAPIModel.swift */; };
 		652FE12F284577BD00BC72AD /* Swifter.docc in Sources */ = {isa = PBXBuildFile; fileRef = 652FE12E284577BD00BC72AD /* Swifter.docc */; };
 		652FE13D284577BE00BC72AD /* Swifter.h in Headers */ = {isa = PBXBuildFile; fileRef = 652FE12D284577BD00BC72AD /* Swifter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65B8D5D92846A5D6001F807E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8D5D82846A5D6001F807E /* HomeViewController.swift */; };
 		65CD6704284596C000CC0B5A /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 6504D21F28457071009C3193 /* Assets.xcassets */; };
 		65CD6705284596C000CC0B5A /* Preview Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 6504D22228457071009C3193 /* Preview Assets.xcassets */; };
 		65CD6706284596C000CC0B5A /* HackerNewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D22328457071009C3193 /* HackerNewsApp.swift */; };
@@ -25,12 +31,12 @@
 		65CD6715284596C100CC0B5A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D22928457071009C3193 /* Constants.swift */; };
 		65CD6716284596C100CC0B5A /* calcLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D22A28457071009C3193 /* calcLogic.swift */; };
 		65CD6717284596C100CC0B5A /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D22B28457071009C3193 /* SearchResults.swift */; };
-		65CD6718284596C100CC0B5A /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D22D28457071009C3193 /* PostData.swift */; };
+		65CD6718284596C100CC0B5A /* FinanceDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D22D28457071009C3193 /* FinanceDocs.swift */; };
 		65CD6719284596C100CC0B5A /* TimeByMonthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D22E28457071009C3193 /* TimeByMonthModel.swift */; };
 		65CD671A284596C100CC0B5A /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D22F28457071009C3193 /* Asset.swift */; };
 		65CD671B284596C100CC0B5A /* DateSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D23F28457071009C3193 /* DateSelectionTableViewController.swift */; };
 		65CD671C284596C100CC0B5A /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D24028457071009C3193 /* SearchTableViewController.swift */; };
-		65CD671D284596C100CC0B5A /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D24128457071009C3193 /* NewsTableViewController.swift */; };
+		65CD671D284596C100CC0B5A /* FinanceDocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D24128457071009C3193 /* FinanceDocumentsViewController.swift */; };
 		65CD671E284596C100CC0B5A /* PDFScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D24328457071009C3193 /* PDFScannerApp.swift */; };
 		65CD671F284596C100CC0B5A /* PDFScannerAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D24428457071009C3193 /* PDFScannerAppDelegate.swift */; };
 		65CD6720284596C100CC0B5A /* CTScanTextApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D24528457071009C3193 /* CTScanTextApp.swift */; };
@@ -43,8 +49,6 @@
 		65CD6727284596C100CC0B5A /* TwitterPredictViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D24D28457071009C3193 /* TwitterPredictViewController.swift */; };
 		65CD6728284596C100CC0B5A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D25028457071009C3193 /* WebView.swift */; };
 		65CD6729284596C100CC0B5A /* SearchPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D25328457071009C3193 /* SearchPlaceholderView.swift */; };
-		65CD672A284596C100CC0B5A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D25528457071009C3193 /* DetailView.swift */; };
-		65CD672B284596C100CC0B5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D25628457071009C3193 /* ContentView.swift */; };
 		65CD672C284596C100CC0B5A /* HomeCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6504D25828457071009C3193 /* HomeCardViewController.swift */; };
 		65CD672D284596C100CC0B5A /* Financial_Calc_II-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 6504D25928457071009C3193 /* Financial_Calc_II-Bridging-Header.h */; };
 		65CD672E284596C100CC0B5A /* LaunchScreen.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 6504D25A28457071009C3193 /* LaunchScreen.storyboard */; };
@@ -64,6 +68,7 @@
 		65CD6740284597DC00CC0B5A /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 652FE11B2845777E00BC72AD /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		65CD6748284597EF00CC0B5A /* Pods_Finance_App01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65CD6747284597EF00CC0B5A /* Pods_Finance_App01.framework */; };
 		65CD674B284597FE00CC0B5A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 65CD674A284597FE00CC0B5A /* SwiftyJSON */; };
+		65CFFB872846F3550022DA13 /* Loaf in Frameworks */ = {isa = PBXBuildFile; productRef = 65CFFB862846F3550022DA13 /* Loaf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,7 +139,7 @@
 		6504D22928457071009C3193 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6504D22A28457071009C3193 /* calcLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calcLogic.swift; sourceTree = "<group>"; };
 		6504D22B28457071009C3193 /* SearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
-		6504D22D28457071009C3193 /* PostData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		6504D22D28457071009C3193 /* FinanceDocs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceDocs.swift; sourceTree = "<group>"; };
 		6504D22E28457071009C3193 /* TimeByMonthModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeByMonthModel.swift; sourceTree = "<group>"; };
 		6504D22F28457071009C3193 /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		6504D23128457071009C3193 /* TableViewControllerLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerLogger.swift; sourceTree = "<group>"; };
@@ -151,7 +156,7 @@
 		6504D23D28457071009C3193 /* newsAPIWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newsAPIWorker.swift; sourceTree = "<group>"; };
 		6504D23F28457071009C3193 /* DateSelectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSelectionTableViewController.swift; sourceTree = "<group>"; };
 		6504D24028457071009C3193 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
-		6504D24128457071009C3193 /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		6504D24128457071009C3193 /* FinanceDocumentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceDocumentsViewController.swift; sourceTree = "<group>"; };
 		6504D24328457071009C3193 /* PDFScannerApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFScannerApp.swift; sourceTree = "<group>"; };
 		6504D24428457071009C3193 /* PDFScannerAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFScannerAppDelegate.swift; sourceTree = "<group>"; };
 		6504D24528457071009C3193 /* CTScanTextApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTScanTextApp.swift; sourceTree = "<group>"; };
@@ -165,8 +170,6 @@
 		6504D25028457071009C3193 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		6504D25128457071009C3193 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6504D25328457071009C3193 /* SearchPlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPlaceholderView.swift; sourceTree = "<group>"; };
-		6504D25528457071009C3193 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		6504D25628457071009C3193 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6504D25828457071009C3193 /* HomeCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCardViewController.swift; sourceTree = "<group>"; };
 		6504D25928457071009C3193 /* Financial_Calc_II-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Financial_Calc_II-Bridging-Header.h"; sourceTree = "<group>"; };
 		6504D25B28457071009C3193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -181,12 +184,18 @@
 		6504D26D28457071009C3193 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6504D26E28457071009C3193 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		65077D1A2845B1D7005DC1C9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		652E1BD028482A6B00F9A155 /* DocsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocsTableViewCell.swift; sourceTree = "<group>"; };
+		652E1BD2284868CE00F9A155 /* FinanceDocsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceDocsWorker.swift; sourceTree = "<group>"; };
+		652E1BD528493CF300F9A155 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsTableViewController.swift; path = "/Users/adelal-aali/Desktop/Finance_App01/Finance_App01/Finance_App01/Controller/NewsTableViewController.swift"; sourceTree = "<absolute>"; };
+		652E1BD7284955BE00F9A155 /* NewsAPIWorker .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewsAPIWorker .swift"; sourceTree = "<group>"; };
+		652E1BD9284955E200F9A155 /* newsAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsAPIModel.swift; sourceTree = "<group>"; };
 		652FE1112845777E00BC72AD /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
 		652FE12B284577BD00BC72AD /* Swifter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swifter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		652FE12D284577BD00BC72AD /* Swifter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swifter.h; sourceTree = "<group>"; };
 		652FE12E284577BD00BC72AD /* Swifter.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Swifter.docc; sourceTree = "<group>"; };
 		652FE13B284577BE00BC72AD /* SwifterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifterTests.swift; sourceTree = "<group>"; };
 		6544E0BD2845958E00C9A67C /* Finance_App01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finance_App01.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B8D5D82846A5D6001F807E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		65CD6744284597EA00CC0B5A /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CD6747284597EF00CC0B5A /* Pods_Finance_App01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Finance_App01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CD674C2845981500CC0B5A /* CreateML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CreateML.framework; path = System/Library/Frameworks/CreateML.framework; sourceTree = SDKROOT; };
@@ -200,6 +209,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65CFFB872846F3550022DA13 /* Loaf in Frameworks */,
 				65CD673E2845979F00CC0B5A /* MBProgressHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,12 +261,12 @@
 		6504D21C28457071009C3193 /* Finance_App01 */ = {
 			isa = PBXGroup;
 			children = (
-				6504D21D28457071009C3193 /* HackerNews */,
-				6504D22628457071009C3193 /* Protocols  */,
 				6504D22828457071009C3193 /* Models */,
 				6504D23E28457071009C3193 /* Controller */,
-				6504D24E28457071009C3193 /* Workers */,
 				6504D25228457071009C3193 /* Views */,
+				6504D21D28457071009C3193 /* HackerNews */,
+				6504D22628457071009C3193 /* Protocols  */,
+				6504D24E28457071009C3193 /* Workers */,
 				6504D25E28457071009C3193 /* Assets */,
 				6504D26628457071009C3193 /* businessCardII */,
 				6504D26B28457071009C3193 /* Protocols */,
@@ -335,6 +345,8 @@
 				6504D22C28457071009C3193 /* News Models */,
 				6504D22E28457071009C3193 /* TimeByMonthModel.swift */,
 				6504D22F28457071009C3193 /* Asset.swift */,
+				652E1BD7284955BE00F9A155 /* NewsAPIWorker .swift */,
+				652E1BD9284955E200F9A155 /* newsAPIModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -342,7 +354,7 @@
 		6504D22C28457071009C3193 /* News Models */ = {
 			isa = PBXGroup;
 			children = (
-				6504D22D28457071009C3193 /* PostData.swift */,
+				6504D22D28457071009C3193 /* FinanceDocs.swift */,
 			);
 			path = "News Models";
 			sourceTree = "<group>";
@@ -350,14 +362,14 @@
 		6504D23028457071009C3193 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				652E1BD42848749000F9A155 /* Loggers */,
 				6504D23428457071009C3193 /* CreateMLmodels */,
-				6504D23128457071009C3193 /* TableViewControllerLogger.swift */,
-				6504D23228457071009C3193 /* ViewControllerLogger.swift */,
 				6504D23328457071009C3193 /* APIService.swift */,
 				6504D23A28457071009C3193 /* APIWorker.swift */,
 				6504D23B28457071009C3193 /* DCALogic.swift */,
 				6504D23C28457071009C3193 /* Extensions.swift */,
 				6504D23D28457071009C3193 /* newsAPIWorker.swift */,
+				652E1BD2284868CE00F9A155 /* FinanceDocsWorker.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -377,13 +389,14 @@
 		6504D23E28457071009C3193 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				652E1BD528493CF300F9A155 /* NewsTableViewController.swift */,
+				65B8D5D82846A5D6001F807E /* HomeViewController.swift */,
 				6504D23F28457071009C3193 /* DateSelectionTableViewController.swift */,
 				6504D24028457071009C3193 /* SearchTableViewController.swift */,
-				6504D24128457071009C3193 /* NewsTableViewController.swift */,
+				6504D24128457071009C3193 /* FinanceDocumentsViewController.swift */,
 				6504D24228457071009C3193 /* Camera_Controllers */,
 				6504D24828457071009C3193 /* CalculatorIII.swift */,
 				6504D24928457071009C3193 /* New Group */,
-				6504D24A28457071009C3193 /* SearchTableViewCell.swift */,
 				6504D24B28457071009C3193 /* PageViewController.swift */,
 				6504D24C28457071009C3193 /* CalculatorViewTableControllerViewController.swift */,
 				6504D24D28457071009C3193 /* TwitterPredictViewController.swift */,
@@ -421,7 +434,6 @@
 		6504D24F28457071009C3193 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				6504D25028457071009C3193 /* WebView.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -429,8 +441,11 @@
 		6504D25228457071009C3193 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6504D24A28457071009C3193 /* SearchTableViewCell.swift */,
+				652E1BD028482A6B00F9A155 /* DocsTableViewCell.swift */,
+				6504D25028457071009C3193 /* WebView.swift */,
 				6504D25328457071009C3193 /* SearchPlaceholderView.swift */,
-				6504D25428457071009C3193 /* News_Views */,
+				6504D25428457071009C3193 /* News */,
 				6504D25828457071009C3193 /* HomeCardViewController.swift */,
 				6504D25928457071009C3193 /* Financial_Calc_II-Bridging-Header.h */,
 				6504D25A28457071009C3193 /* LaunchScreen.storyboard */,
@@ -439,14 +454,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		6504D25428457071009C3193 /* News_Views */ = {
+		6504D25428457071009C3193 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				6504D25528457071009C3193 /* DetailView.swift */,
-				6504D25628457071009C3193 /* ContentView.swift */,
 				6504D25728457071009C3193 /* Camera_Scanner */,
 			);
-			path = News_Views;
+			path = News;
 			sourceTree = "<group>";
 		};
 		6504D25728457071009C3193 /* Camera_Scanner */ = {
@@ -514,6 +527,15 @@
 			children = (
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		652E1BD42848749000F9A155 /* Loggers */ = {
+			isa = PBXGroup;
+			children = (
+				6504D23228457071009C3193 /* ViewControllerLogger.swift */,
+				6504D23128457071009C3193 /* TableViewControllerLogger.swift */,
+			);
+			path = Loggers;
 			sourceTree = "<group>";
 		};
 		652FE1122845777E00BC72AD /* Products */ = {
@@ -597,6 +619,7 @@
 			name = Swifter;
 			packageProductDependencies = (
 				65CD673D2845979F00CC0B5A /* MBProgressHUD */,
+				65CFFB862846F3550022DA13 /* Loaf */,
 			);
 			productName = Swifter;
 			productReference = 652FE12B284577BD00BC72AD /* Swifter.framework */;
@@ -616,6 +639,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6548FEE2284707E3006561A5 /* PBXTargetDependency */,
 			);
 			name = Finance_App01;
 			packageProductDependencies = (
@@ -655,6 +679,7 @@
 			packageReferences = (
 				652FE10B2845766700BC72AD /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				652FE14D28458CE700BC72AD /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+				65CFFB852846F3550022DA13 /* XCRemoteSwiftPackageReference "Loaf" */,
 			);
 			productRefGroup = 6504D2032845704D009C3193 /* Products */;
 			projectDirPath = "";
@@ -795,22 +820,26 @@
 				65CD6707284596C000CC0B5A /* MBProgAnimate.swift in Sources */,
 				65CD6709284596C000CC0B5A /* TwitterClassifer.mlmodel in Sources */,
 				65CD670D284596C100CC0B5A /* createTwitterMLmodel.swift in Sources */,
+				652E1BD8284955BE00F9A155 /* NewsAPIWorker .swift in Sources */,
+				652E1BD128482A6B00F9A155 /* DocsTableViewCell.swift in Sources */,
 				65CD670E284596C100CC0B5A /* TableViewControllerLogger.swift in Sources */,
+				652E1BDA284955E200F9A155 /* newsAPIModel.swift in Sources */,
 				65CD670F284596C100CC0B5A /* ViewControllerLogger.swift in Sources */,
 				65CD6710284596C100CC0B5A /* APIService.swift in Sources */,
 				65CD6711284596C100CC0B5A /* APIWorker.swift in Sources */,
 				65CD6712284596C100CC0B5A /* DCALogic.swift in Sources */,
 				65CD6713284596C100CC0B5A /* Extensions.swift in Sources */,
+				65B8D5D92846A5D6001F807E /* HomeViewController.swift in Sources */,
 				65CD6714284596C100CC0B5A /* newsAPIWorker.swift in Sources */,
 				65CD6715284596C100CC0B5A /* Constants.swift in Sources */,
 				65CD6716284596C100CC0B5A /* calcLogic.swift in Sources */,
 				65CD6717284596C100CC0B5A /* SearchResults.swift in Sources */,
-				65CD6718284596C100CC0B5A /* PostData.swift in Sources */,
+				65CD6718284596C100CC0B5A /* FinanceDocs.swift in Sources */,
 				65CD6719284596C100CC0B5A /* TimeByMonthModel.swift in Sources */,
 				65CD671A284596C100CC0B5A /* Asset.swift in Sources */,
 				65CD671B284596C100CC0B5A /* DateSelectionTableViewController.swift in Sources */,
 				65CD671C284596C100CC0B5A /* SearchTableViewController.swift in Sources */,
-				65CD671D284596C100CC0B5A /* NewsTableViewController.swift in Sources */,
+				65CD671D284596C100CC0B5A /* FinanceDocumentsViewController.swift in Sources */,
 				65CD671E284596C100CC0B5A /* PDFScannerApp.swift in Sources */,
 				65CD671F284596C100CC0B5A /* PDFScannerAppDelegate.swift in Sources */,
 				65CD6720284596C100CC0B5A /* CTScanTextApp.swift in Sources */,
@@ -819,12 +848,12 @@
 				65CD6723284596C100CC0B5A /* CalculatorIII.swift in Sources */,
 				65CD6724284596C100CC0B5A /* SearchTableViewCell.swift in Sources */,
 				65CD6725284596C100CC0B5A /* PageViewController.swift in Sources */,
+				652E1BD628493CF300F9A155 /* NewsTableViewController.swift in Sources */,
 				65CD6726284596C100CC0B5A /* CalculatorViewTableControllerViewController.swift in Sources */,
+				652E1BD3284868CE00F9A155 /* FinanceDocsWorker.swift in Sources */,
 				65CD6727284596C100CC0B5A /* TwitterPredictViewController.swift in Sources */,
 				65CD6728284596C100CC0B5A /* WebView.swift in Sources */,
 				65CD6729284596C100CC0B5A /* SearchPlaceholderView.swift in Sources */,
-				65CD672A284596C100CC0B5A /* DetailView.swift in Sources */,
-				65CD672B284596C100CC0B5A /* ContentView.swift in Sources */,
 				65CD672C284596C100CC0B5A /* HomeCardViewController.swift in Sources */,
 				65CD672D284596C100CC0B5A /* Financial_Calc_II-Bridging-Header.h in Sources */,
 				65CD672E284596C100CC0B5A /* LaunchScreen.storyboard in Sources */,
@@ -843,6 +872,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6548FEE2284707E3006561A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 6548FEE1284707E3006561A5 /* Loaf */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6504D25A28457071009C3193 /* LaunchScreen.storyboard */ = {
@@ -1147,9 +1183,22 @@
 				minimumVersion = 1.2.0;
 			};
 		};
+		65CFFB852846F3550022DA13 /* XCRemoteSwiftPackageReference "Loaf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/schmidyy/Loaf";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6548FEE1284707E3006561A5 /* Loaf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65CFFB852846F3550022DA13 /* XCRemoteSwiftPackageReference "Loaf" */;
+			productName = Loaf;
+		};
 		65CD673D2845979F00CC0B5A /* MBProgressHUD */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 652FE14D28458CE700BC72AD /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
@@ -1159,6 +1208,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 652FE10B2845766700BC72AD /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		65CFFB862846F3550022DA13 /* Loaf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65CFFB852846F3550022DA13 /* XCRemoteSwiftPackageReference "Loaf" */;
+			productName = Loaf;
 		};
 /* End XCSwiftPackageProductDependency section */
 

@@ -9,7 +9,6 @@ import Foundation
 import WebKit
 import SwiftUI
 
-// allows us to create a UIKitView (views for external webpage)
 struct WebView: UIViewRepresentable {
     let urlStr: String?
     

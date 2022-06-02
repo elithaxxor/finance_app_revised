@@ -8,6 +8,21 @@
 import Foundation
 import UIKit
 
+
+// MARK: Convert Int to String- Date/Time format 
+extension Int {
+    var formatIntToDateTime: String {
+        let(h,m,s) = (self / 3600, (self % 3600) / 60, (self % 3600) % 60)
+
+        let h_string = h < 10 ? "0\(h)" : "0\(h)"
+        let m_string = m < 10 ? "0\(m)" : "0\(m)"
+        let s_string = s < 10 ? "0\(s)" : "0\(s)"
+        return "\(h_string):\(m_string):\(s_string)"
+    }
+}
+
+
+
 //MARK:  [UIColor ] Specificing Red / Green hexColors for
 extension UIColor {
     static let losingRed = UIColor("fae2e1")
